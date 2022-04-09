@@ -4,8 +4,8 @@ qr=qrcode.QRCode(
     box_size=10,
     border=5
 )
-data="https://leetcode.com/problems/two-sum/"
+data="https://leetcode.com/problems/two-sum/" #data=link of any site
 qr.add_data(data)
 qr.make(fit=True)
-img=qr.make_image(fill="black",back_color="white")
+img=qr.make_image(fill="black",back_color="white") #image formation
 img.save('text.png')
